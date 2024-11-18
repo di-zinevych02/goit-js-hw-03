@@ -1,10 +1,9 @@
 function makeArray(firstArray, secondArray, maxLength) {
-  const planets = [];
   const concatArray = firstArray.concat(secondArray);
-  if ((concatArray.length = maxLength)) {
+  if (concatArray.length > maxLength) {
     return concatArray.slice(0, maxLength);
   }
-  return planets;
+  return concatArray;
 }
 
 console.log(makeArray(['Mango', 'Poly'], ['Ajax', 'Chelsea'], 3));
